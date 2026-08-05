@@ -36,6 +36,18 @@ header {
     z-index: 1000;
 }
 
+.about-text p {
+    margin-bottom: 20px;
+    text-align: justify; /* Giustifica il testo del profilo */
+}
+
+.project-card p {
+    color: var(--gray);
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+    text-align: justify; /* Giustifica il testo nei riquadri dei progetti */
+}
+
 .nav-container {
     display: flex;
     justify-content: space-between;
