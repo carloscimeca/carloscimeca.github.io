@@ -4,18 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carlo Scimeca | Environmental Engineering Portfolio</title>
+    <meta name="description" content="Portfolio of Carlo Scimeca — Environmental Engineering MSc student, Politecnico di Torino. Sustainable process engineering, waste management, renewable energy, geospatial modeling.">
     <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- FontAwesome for icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- Header / Navbar -->
+    <!-- Corner crosshairs (fixed, drawing-sheet convention) -->
+    <div class="crosshair tl" aria-hidden="true"></div>
+    <div class="crosshair tr" aria-hidden="true"></div>
+    <div class="crosshair bl" aria-hidden="true"></div>
+    <div class="crosshair br" aria-hidden="true"></div>
+
+    <!-- Header -->
     <header>
         <div class="container nav-container">
-            <span class="logo">Carlo Scimeca</span>
+            <a href="#top" class="logo">C. SCIMECA</a>
             <nav>
                 <a href="#about">About</a>
                 <a href="#education">Education</a>
@@ -26,47 +32,75 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
+    <!-- Hero -->
+    <section class="hero" id="top">
+        <svg class="contour-field" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <g class="contour-lines">
+                <path d="M-100,650 C150,600 300,700 500,640 C700,580 850,660 1300,600" />
+                <path d="M-100,580 C150,530 300,630 500,570 C700,510 850,590 1300,530" />
+                <path d="M-100,510 C150,460 300,560 500,500 C700,440 850,520 1300,460" />
+                <path d="M-100,440 C150,390 300,490 500,430 C700,370 850,450 1300,390" />
+                <path d="M-100,370 C150,320 300,420 500,360 C700,300 850,380 1300,320" />
+            </g>
+        </svg>
         <div class="container hero-content">
+            <p class="coord-tag">45°04&prime;N&nbsp;&nbsp;7&deg;40&prime;E — POLITECNICO DI TORINO</p>
             <h1>Carlo Scimeca</h1>
-            <p class="subtitle">Environmental Engineering MSc Student @ Politecnico di Torino</p>
-            <p class="hero-desc">Pursuing a twin-track path toward Chemical and Sustainable Process Engineering, focused on industrial sustainability, waste management, renewable energy, and geospatial modeling</p>
+            <p class="subtitle">Environmental Engineering &mdash; toward Chemical &amp; Sustainable Process Engineering</p>
+            <p class="hero-desc">MSc student building a career at the intersection of industrial sustainability, waste management, renewable energy and geospatial modeling &mdash; grounded in a Bachelor's in Environmental Engineering from the Università degli Studi di Palermo.</p>
             <div class="hero-buttons">
                 <a href="#projects" class="btn primary">Explore Projects</a>
                 <a href="Documents/CV.pdf" class="btn secondary" target="_blank"><i class="fas fa-file-pdf"></i> Download CV</a>
             </div>
         </div>
+        <div class="scale-bar" aria-hidden="true">
+            <span>0</span><span>1</span><span>2</span><span>3 km</span>
+        </div>
     </section>
 
-    <!-- About Me -->
+    <!-- About -->
     <section id="about" class="section">
         <div class="container">
-            <h2>About Me</h2>
+            <p class="sheet-tag">TAV. 01 &mdash; PROFILE</p>
+            <h2>About</h2>
             <div class="about-grid">
                 <div class="about-text">
-                    <p>I am an Environmental Engineering MSc student at the Politecnico di Torino, specializing in Industrial Environmental Sustainability through a twin-track path oriented toward a specialization in Chemical Engineering and Sustainable Processes. Building upon my Bachelor's Degree in Environmental Engineering from the Università degli Studi di Palermo, my academic and project work bridges rigorous theoretical foundations with practical engineering solutions for the ecological transition.</p>
-                    <p>This portfolio serves as a comprehensive showcase of my technical capabilities and hands-on academic projects. Here you will find detailed reports and analyses spanning sustainable industrial technologies, waste treatment and management, renewable energy resources, pollutant dynamics, and applied geophysics. Furthermore, it highlights my proficiency in advanced spatial modeling, including GIS, cartography, remote sensing (Sentinel-2 processing), hydrology, hydraulics, and numerical tools such as MATLAB.</p>
-                    <p>Driven by a strong commitment to sustainable development and plant-scale optimization, I am eager to apply my multidisciplinary background to complex environmental challenges.</p>
+                    <p>I'm an Environmental Engineering MSc student at the Politecnico di Torino, on a twin-track path toward Chemical Engineering and Sustainable Processes. The foundation is a Bachelor's degree from the Università degli Studi di Palermo &mdash; my work since has connected that theoretical base to real engineering problems in the ecological transition.</p>
+                    <p>This portfolio collects the reports and projects behind that work: sustainable industrial technologies, waste treatment and management, renewable energy resources, pollutant dynamics, and applied geophysics, alongside a parallel track in spatial modeling &mdash; GIS, cartography, remote sensing with Sentinel-2, hydrology, hydraulics, and numerical analysis in MATLAB.</p>
+                    <p>What ties it together is an interest in plant-scale optimization: taking sustainability from a design principle to something that actually runs, at scale, in industry.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Education -->
-    <section id="education" class="section bg-light">
+    <!-- Education — rendered as a stratigraphic core sample -->
+    <section id="education" class="section bg-dark">
         <div class="container">
-            <h2>Education</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <h3>MSc in Industrial Environmental Sustainability (Twin-Track Pathway)</h3>
-                    <span class="date">Politecnico di Torino | Current</span>
-                    <p>Pursuing a master's program oriented toward a specialization in Chemical Engineering and Sustainable Processes, focusing on industrial process sustainability, plant engineering, renewable energy resources, pollutant dynamics, and applied geophysics.</p>
+            <p class="sheet-tag light">TAV. 02 &mdash; CORE SAMPLE</p>
+            <h2 class="on-dark">Education</h2>
+            <p class="section-lede on-dark">Two layers, read bottom to top &mdash; the way you'd log a core.</p>
+
+            <div class="core">
+                <div class="core-axis" aria-hidden="true"></div>
+
+                <div class="core-layer">
+                    <div class="core-marker"><span>02</span></div>
+                    <div class="core-content">
+                        <span class="layer-status">in progress</span>
+                        <h3>MSc &mdash; Industrial Environmental Sustainability</h3>
+                        <span class="date">Politecnico di Torino &middot; Twin-track: Chemical &amp; Sustainable Process Engineering</span>
+                        <p>Plant-scale process sustainability, industrial engineering, renewable energy resources, pollutant dynamics and applied geophysics.</p>
+                    </div>
                 </div>
-                <div class="timeline-item">
-                    <h3>BSc in Environmental Engineering</h3>
-                    <span class="date">Università degli Studi di Palermo</span>
-                    <p>Comprehensive training covering spatial data analysis, cartography, geotechnics, hydraulics, hydrology, sanitary engineering, and remote sensing.</p>
+
+                <div class="core-layer">
+                    <div class="core-marker"><span>01</span></div>
+                    <div class="core-content">
+                        <span class="layer-status">completed</span>
+                        <h3>BSc &mdash; Environmental Engineering</h3>
+                        <span class="date">Università degli Studi di Palermo</span>
+                        <p>Spatial data analysis, cartography, geotechnics, hydraulics, hydrology, sanitary engineering and remote sensing.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -75,21 +109,25 @@
     <!-- Skills -->
     <section id="skills" class="section">
         <div class="container">
+            <p class="sheet-tag">TAV. 03 &mdash; INSTRUMENTATION</p>
             <h2>Technical Skills</h2>
             <div class="skills-grid">
                 <div class="skill-card">
+                    <span class="skill-index">01</span>
                     <i class="fas fa-laptop-code"></i>
-                    <h3>Software & Tools</h3>
+                    <h3>Software &amp; Tools</h3>
                     <p>MATLAB, QGIS, ENVI, Overleaf (LaTeX), Microsoft Excel, Notability</p>
                 </div>
                 <div class="skill-card">
+                    <span class="skill-index">02</span>
                     <i class="fas fa-industry"></i>
-                    <h3>Engineering & Design</h3>
-                    <p>Anaerobic digestion, renewable energy, pollutant dynamics, mass balances, waste treatment, applied geophysics, hydraulics & hydrology</p>
+                    <h3>Engineering &amp; Design</h3>
+                    <p>Anaerobic digestion, renewable energy, pollutant dynamics, mass balances, waste treatment, applied geophysics, hydraulics &amp; hydrology</p>
                 </div>
                 <div class="skill-card">
+                    <span class="skill-index">03</span>
                     <i class="fas fa-globe-americas"></i>
-                    <h3>Geospatial & Analysis</h3>
+                    <h3>Geospatial &amp; Analysis</h3>
                     <p>Spatial data analysis, cartography, geotechnics, remote sensing (Sentinel-2), ERA5 meteorological time-series processing</p>
                 </div>
             </div>
@@ -97,14 +135,16 @@
     </section>
 
     <!-- Projects -->
-    <section id="projects" class="section bg-light">
+    <section id="projects" class="section bg-dark">
         <div class="container">
-            <h2>Featured Projects & Reports</h2>
+            <p class="sheet-tag light">TAV. 04 &mdash; FIELD REPORTS</p>
+            <h2 class="on-dark">Featured Projects &amp; Reports</h2>
             <div class="projects-grid">
-                
+
                 <div class="project-card">
-                    <h3>Anaerobic Digester & Waste Management</h3>
-                    <p>Design of high-solids dry anaerobic digestion plants and sanitary engineering frameworks for treating agro-industrial biomass, organic fractions, and municipal solid wastes.</p>
+                    <span class="plate-number">PLATE 01</span>
+                    <h3>Anaerobic Digester &amp; Waste Management</h3>
+                    <p>Design of high-solids dry anaerobic digestion plants and sanitary engineering frameworks for treating agro-industrial biomass, organic fractions and municipal solid waste.</p>
                     <div class="tags">
                         <span>Sanitary Engineering</span>
                         <span>Biomass</span>
@@ -113,8 +153,9 @@
                 </div>
 
                 <div class="project-card">
-                    <h3>Renewable Energy & Pollutant Dynamics</h3>
-                    <p>Evaluations of renewable energy resources, wind data processing (ERA5 datasets), and modeling of pollutant transport and environmental dynamics.</p>
+                    <span class="plate-number">PLATE 02</span>
+                    <h3>Renewable Energy &amp; Pollutant Dynamics</h3>
+                    <p>Resource assessment for renewable energy, wind data processing from ERA5 datasets, and modeling of pollutant transport and environmental dynamics.</p>
                     <div class="tags">
                         <span>Renewable Energy</span>
                         <span>Pollutant Dynamics</span>
@@ -123,8 +164,9 @@
                 </div>
 
                 <div class="project-card">
-                    <h3>Spatial Analysis, GIS & Remote Sensing</h3>
-                    <p>Processing satellite data (Sentinel-2) via ENVI and QGIS, land cover classification, flood monitoring, cartography, and applied geophysics investigations.</p>
+                    <span class="plate-number">PLATE 03</span>
+                    <h3>Spatial Analysis, GIS &amp; Remote Sensing</h3>
+                    <p>Satellite data processing (Sentinel-2) via ENVI and QGIS, land cover classification, flood monitoring, cartography and applied geophysics investigations.</p>
                     <div class="tags">
                         <span>Spatial Analysis</span>
                         <span>Cartography</span>
@@ -133,8 +175,9 @@
                 </div>
 
                 <div class="project-card">
-                    <h3>Hydraulics, Hydrology & Geotechnics</h3>
-                    <p>Numerical modeling of watersheds, hydrological time-series analysis, hydraulic resource evaluations, and geotechnical assessment reports.</p>
+                    <span class="plate-number">PLATE 04</span>
+                    <h3>Hydraulics, Hydrology &amp; Geotechnics</h3>
+                    <p>Numerical modeling of watersheds, hydrological time-series analysis, hydraulic resource evaluation and geotechnical assessment reporting.</p>
                     <div class="tags">
                         <span>Hydrology</span>
                         <span>Hydraulics</span>
@@ -149,8 +192,9 @@
     <!-- Contact -->
     <section id="contact" class="section">
         <div class="container contact-container">
-            <h2>Contact</h2>
-            <p>Would you like to get in touch or view my full curriculum vitae?</p>
+            <p class="sheet-tag">TAV. 05 &mdash; CONTACT</p>
+            <h2>Get in touch</h2>
+            <p>Open to conversations about sustainable process engineering, environmental data, or the full CV.</p>
             <div class="contact-links">
                 <a href="mailto:tua-email@example.com" class="btn primary"><i class="fas fa-envelope"></i> Email</a>
                 <a href="https://www.linkedin.com" target="_blank" class="btn secondary"><i class="fab fa-linkedin"></i> LinkedIn</a>
@@ -161,6 +205,7 @@
 
     <!-- Footer -->
     <footer>
+        <p class="footer-coord">45°04&prime;N 7°40&prime;E</p>
         <p>&copy; 2026 Carlo Scimeca. All rights reserved.</p>
     </footer>
 
